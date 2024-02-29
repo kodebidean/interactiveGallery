@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <ul class="slider">
+        <li
+          class="item"
+          style="
+            background-image: url('https://cdn.leonardo.ai/users/d14c354a-44c3-4ba0-ac2e-6b3dcbbff518/generations/f4a9792f-24d4-493a-9a56-e2256b7180e4/Leonardo_Diffusion_XL_Imagine_a_new_species_that_can_live_on_e_3.jpg');
+          "
+        >
+          <div class="content">
+            <h2 class="title">"Lossless Youths"</h2>
+            <p class="description">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore
+              fuga voluptatum, iure corporis inventore praesentium nisi. Id
+              laboriosam ipsam enim.
+            </p>
+            <button>Read More</button>
+          </div>
+        </li>
+        <li
+          class="item"
+          style="background-image: url('https://cdn.leonardo.ai/users/d14c354a-44c3-4ba0-ac2e-6b3dcbbff518/generations/626d2609-5475-4e7d-b6b5-21d54ba5b9ad/Leonardo_Diffusion_XL_Imagine_a_extraordinarily_beautiful_and_0.jpg')";
+        >
+          <div class="content">
+            <h2 class="title">"Estrange Bond"</h2>
+            <p class="description">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore
+              fuga voluptatum, iure corporis inventore praesentium nisi. Id
+              laboriosam ipsam enim.
+            </p>
+            <button>Read More</button>
+          </div>
+        </li>
+        <li
+          class="item"
+          style="
+            background-image: url('https://cdn.leonardo.ai/users/d14c354a-44c3-4ba0-ac2e-6b3dcbbff518/generations/3ae208b5-96b1-48b9-9904-3dd29b506bbe/DreamShaper_v7_Imagine_a_new_species_that_can_live_on_earth_an_3.jpg');
+          "
+        >
+          <div class="content">
+            <h2 class="title">"The Gate Keeper"</h2>
+            <p class="description">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore
+              fuga voluptatum, iure corporis inventore praesentium nisi. Id
+              laboriosam ipsam enim.
+            </p>
+            <button>Read More</button>
+          </div>
+        </li>
+        <li
+          class="item"
+          style="
+            background-image: url('https://cdn.leonardo.ai/users/d14c354a-44c3-4ba0-ac2e-6b3dcbbff518/generations/3ae208b5-96b1-48b9-9904-3dd29b506bbe/DreamShaper_v7_Imagine_a_new_species_that_can_live_on_earth_an_1.jpg');
+          "
+        >
+          <div class="content">
+            <h2 class="title">"Last Trace Of Us"</h2>
+            <p class="description">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore
+              fuga voluptatum, iure corporis inventore praesentium nisi. Id
+              laboriosam ipsam enim.
+            </p>
+            <button>Read More</button>
+          </div>
+        </li>
+        <li
+          class="item"
+          style="
+            background-image: url('https://cdn.leonardo.ai/users/d14c354a-44c3-4ba0-ac2e-6b3dcbbff518/generations/88aa4024-2dbb-449f-8286-c6ee88254f89/DreamShaper_v7_Imagine_a_new_species_that_can_live_on_earth_an_7.jpg');
+          "
+        >
+          <div class="content">
+            <h2 class="title">"Urban Decay"</h2>
+            <p class="description">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore
+              fuga voluptatum, iure corporis inventore praesentium nisi. Id
+              laboriosam ipsam enim.
+            </p>
+            <button>Read More</button>
+          </div>
+        </li>
+        <li
+          class="item"
+          style="
+            background-image: url('https://cdn.leonardo.ai/users/d14c354a-44c3-4ba0-ac2e-6b3dcbbff518/generations/3ae208b5-96b1-48b9-9904-3dd29b506bbe/DreamShaper_v7_Imagine_a_new_species_that_can_live_on_earth_an_2.jpg');
+          "
+        >
+          <div class="content">
+            <h2 class="title">"The Migration"</h2>
+            <p class="description">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore
+              fuga voluptatum, iure corporis inventore praesentium nisi. Id
+              laboriosam ipsam enim.
+            </p>
+            <button>Read More</button>
+          </div>
+        </li>
+      </ul>
+      <nav class="nav">
+        <ion-icon class="btn prev" name="arrow-back-outline"></ion-icon>
+        <ion-icon class="btn next" name="arrow-forward-outline"></ion-icon>
+      </nav>
+    </main>
+    
+        <script>
+        const slider = document.querySelector(".slider");
+
+        function activate(e) {
+            const items = document.querySelectorAll(".item");
+            e.target.matches(".next") && slider.append(items[0]);
+            e.target.matches(".prev") && slider.prepend(items[items.length - 1]);
+        }
+
+        document.addEventListener("click", activate, false);
+        </script>
+        <script
+        type="module"
+        src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+        ></script>
+        <script
+        nomodule
+        src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+        ></script>
+  </body>
+</html>
